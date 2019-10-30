@@ -1,2 +1,3 @@
-FROM python:3.8-buster
-RUN pip install scipy
+FROM python:3.8-alpine
+RUN apk --no-cache add gcc gfortran musl-dev
+RUN pip install streamlit
